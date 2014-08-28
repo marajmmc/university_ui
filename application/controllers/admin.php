@@ -69,6 +69,60 @@ class Admin extends CI_Controller {
         }
     }
     
+    public function academic_batch($task = "list", $id = 0) {
+        if (User_helper::is_login() && $this->session->userdata("user_type") == "Admin") {
+            //go to its task
+            $base_url = base_url();
+            $this->template->set_template('dashboard');
+            $this->template->write('title', 'Academic');
+            $this->template->write('tasktitle', 'Academic - Batch');
+            $this->template->write_view('top_nav', 'dashboard/top_nav');
+            $this->template->write_view('user_info', 'dashboard/user_info');
+            $this->template->write_view('left_menu', 'dashboard/menu');
+            if ($task == "list") {
+
+                $this->template->write('css', "<link rel='stylesheet' href='$base_url" . "assets/lib/datatables/css/DT_bootstrap.css'>");
+                $data['featuretitle'] = 'Record List';
+                $this->template->write_view('content', 'admin_academic/batch_list', $data);
+            } elseif ($task == "add_edit") {
+                
+                $data['featuretitle'] = 'Record Add/Edit';
+                $this->template->write_view('content', 'admin_academic/batch_add_edit', $data);
+            }
+            $this->template->render();
+        } else {
+            redirect(base_url() . 'test/logout');
+            // die();
+        }
+    }
+    
+    public function routine_create($task = "list", $id = 0) {
+        if (User_helper::is_login() && $this->session->userdata("user_type") == "Admin") {
+            //go to its task
+            $base_url = base_url();
+            $this->template->set_template('dashboard');
+            $this->template->write('title', 'Routine');
+            $this->template->write('tasktitle', 'Routine - Create');
+            $this->template->write_view('top_nav', 'dashboard/top_nav');
+            $this->template->write_view('user_info', 'dashboard/user_info');
+            $this->template->write_view('left_menu', 'dashboard/menu');
+            if ($task == "list") {
+
+                $this->template->write('css', "<link rel='stylesheet' href='$base_url" . "assets/lib/datatables/css/DT_bootstrap.css'>");
+                $data['featuretitle'] = 'Record List';
+                $this->template->write_view('content', 'admin_academic/routine_create_list', $data);
+            } elseif ($task == "add_edit") {
+                
+                $data['featuretitle'] = 'Record Add/Edit';
+                $this->template->write_view('content', 'admin_academic/routine_create_add_edit', $data);
+            }
+            $this->template->render();
+        } else {
+            redirect(base_url() . 'test/logout');
+            // die();
+        }
+    }
+    
     public function academic_subject($task = "list", $id = 0) {
         if (User_helper::is_login() && $this->session->userdata("user_type") == "Admin") {
             //go to its task
@@ -115,6 +169,33 @@ class Admin extends CI_Controller {
                 
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/semester_add_edit', $data);
+            }
+            $this->template->render();
+        } else {
+            redirect(base_url() . 'test/logout');
+            // die();
+        }
+    }
+    
+    public function academic_semester_create($task = "list", $id = 0) {
+        if (User_helper::is_login() && $this->session->userdata("user_type") == "Admin") {
+            //go to its task
+            $base_url = base_url();
+            $this->template->set_template('dashboard');
+            $this->template->write('title', 'Academic');
+            $this->template->write('tasktitle', 'Academic - Semester - Create');
+            $this->template->write_view('top_nav', 'dashboard/top_nav');
+            $this->template->write_view('user_info', 'dashboard/user_info');
+            $this->template->write_view('left_menu', 'dashboard/menu');
+            if ($task == "list") {
+
+                $this->template->write('css', "<link rel='stylesheet' href='$base_url" . "assets/lib/datatables/css/DT_bootstrap.css'>");
+                $data['featuretitle'] = 'Record List';
+                $this->template->write_view('content', 'admin_academic/semester_create_list', $data);
+            } elseif ($task == "add_edit") {
+                
+                $data['featuretitle'] = 'Record Add/Edit';
+                $this->template->write_view('content', 'admin_academic/semester_create_add_edit', $data);
             }
             $this->template->render();
         } else {

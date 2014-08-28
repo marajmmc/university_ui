@@ -21,29 +21,37 @@ if (!defined('BASEPATH'))
                 <table id="dataTable" class="table table-bordered table-condensed table-hover table-striped dataTable">
                     <thead>
                         <tr role="row">
-                            <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 80px;">Semester ID</th>
-                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 241px;">Semester Name</th>
-                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 247px;">Department</th>
-                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 204px;">Status</th>
+                            <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 120px;">ID</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 341px;">Department</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 197px;">Semester</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 197px;">Batch</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 197px;">Subject</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 100px;">Status</th>
                         </tr>
                     </thead>
                     <tbody role="alert" aria-live="polite" aria-relevant="all">
                         <tr class="odd">
-                            <td class=" sorting_1">01</td>
-                            <td class=" ">Summer</td>
+                            <td class=" sorting_1">001</td>
                             <td class=" ">Computer Science & Engineering</td>
+                            <td class=" ">Summer</td>
+                            <td class=" ">21st</td>
+                            <td class=" ">CSE-001</td>
                             <td class=" ">Active</td>
                         </tr>
                         <tr class="odd">
-                            <td class=" sorting_1">02</td>
-                            <td class=" ">Fall</td>
+                            <td class=" sorting_1">002</td>
                             <td class=" ">Electrical & Electronics Engineering</td>
+                            <td class=" ">Summer</td>
+                            <td class=" ">21st</td>
+                            <td class=" ">EEE-001</td>
                             <td class=" ">Active</td>
                         </tr>
                         <tr class="odd">
-                            <td class=" sorting_1">03</td>
-                            <td class=" ">Spring</td>
-                            <td class=" ">Bachelor of Business Administration</td>
+                            <td class=" sorting_1">003</td>
+                            <td class=" ">Pharmacy</td>
+                            <td class=" ">Summer</td>
+                            <td class=" ">21st</td>
+                            <td class=" ">PHRM-001</td>
                             <td class=" ">Active</td>
                         </tr>
                     </tbody>

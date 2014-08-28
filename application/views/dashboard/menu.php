@@ -53,14 +53,24 @@
                         <a href="<?php echo base_url() ?>admin/academic_dipartment/list">
                             <i class="fa fa-angle-right"></i>&nbsp;Department</a> 
                     </li>
+                    <li>
+                        <a href="<?php echo base_url() ?>admin/academic_batch/list">
+                            <i class="fa fa-angle-right"></i>&nbsp;Batch</a> 
+                    </li>
 
                     <li>
                         <a href="<?php echo base_url() ?>admin/academic_subject/list">
                             <i class="fa fa-angle-right"></i>&nbsp;Subject</a> 
                     </li>
                     <li>
-                        <a href="<?php echo base_url() ?>admin/academic_semester/list">
+                        <a href="#">
                             <i class="fa fa-angle-right"></i>&nbsp;Semester</a> 
+                        <ul>
+                            <li><a href="<?php echo base_url() ?>admin/academic_semester/list">
+                                    <i class="fa fa-angle-right"></i>&nbsp;Semester Info</a> </li>
+                            <li><a href="<?php echo base_url() ?>admin/academic_semester_create/list">
+                                    <i class="fa fa-angle-right"></i>&nbsp;Create Semester</a> </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="<?php echo base_url() ?>admin/academic_teacher/list">
@@ -90,12 +100,8 @@
                             <i class="fa fa-angle-right"></i>&nbsp;Period Setup</a> 
                     </li>
                     <li>
-                        <a href="<?php echo base_url() ?>admin/routine_room/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Room Setup</a> 
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/routine_class_routine/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Create Routine</a> 
+                        <a href="<?php echo base_url() ?>admin/routine_create/list">
+                            <i class="fa fa-angle-right"></i>&nbsp;Routine Setup</a> 
                     </li>
                 </ul>
             </li>

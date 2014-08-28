@@ -28,21 +28,17 @@ if (!defined('BASEPATH'))
             </header>
             <div id="div-1" class="body">
                 <form class="form-horizontal" method="post" action="#">
-                    <div class="form-group">
-                        <label for="text1" class="control-label col-lg-4">Subject Name</label>
-                        <div class="col-lg-8">
-                            <input type="text" id="subject_name" name="subject_name" placeholder="Subject Name" class="form-control">
-                        </div>
-                    </div><!-- /.form-group -->
-                    <div class="form-group">
-                        <label for="text1" class="control-label col-lg-4">Subject Code</label>
-                        <div class="col-lg-8">
-                            <input type="text" id="subject_code" name="subject_code" placeholder="Subject Code" class="form-control">
-                        </div>
-                    </div><!-- /.form-group -->
-                    <div class="form-group">
-                        <label for="pass1" class="control-label col-lg-4">Department</label>
-                        <div class="col-lg-8">
+
+                    <div class="row">
+                        <div class="col-lg-4"><label for="pass1" class="control-label col-lg-12">Department</label> </div>
+                        <div class="col-lg-4"><label for="text1" class="control-label col-lg-12">Subject</label></div>
+                        <div class="col-lg-4"><label for="text1" class="control-label col-lg-12">Subject Code</label></div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
                             <select class="form-control" id="department_name" name="department_name" data-original-title="Faculty Name" data-placement="top">
                                 <option>--Select--</option>
                                 <option name="cse" value="cse">Computer Science & Engineering</option>
@@ -50,33 +46,40 @@ if (!defined('BASEPATH'))
                                 <option name="ce" value="ce">Civil Engineering</option>
                             </select>
                         </div>
-                    </div><!-- /.form-group -->
-                    <div class="form-group">
-                        <label for="pass1" class="control-label col-lg-4">Status</label>
-                        <div class="col-lg-8">
-                            <select class="form-control" id="status" name="status" data-original-title="Status" data-placement="top">
-                                <option>--Select--</option>
-                                <option value="Active" selected="">Active</option>
-                                <option value="In-Active">Inactive</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-12">
-                            <div class="col-lg-6">
-                                <a href="<?php echo base_url() . $this->uri->segment('1') . "/" . $this->uri->segment('2') . "/list" ?>" class="btn btn-primary btn-rect pull-left" data-original-title="" title="">Back</a>
-                            </div>
-                            <div class="col-lg-6">
-                                <a href="<?php echo base_url() . $this->uri->segment('1') . "/" . $this->uri->segment('2') . "/list" ?>" class="btn btn-primary btn-rect pull-right" data-original-title="" title="">Save</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.form-group -->
-                </form>
 
+                        <div class="col-lg-4">
+                            <input type="text" id="subject_name" name="subject_name" placeholder="Subject Name" class="form-control">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <input type="text" id="subject_code" name="subject_code" placeholder="Subject Code" class="form-control">
+                        </div>
+
+
+                    </div>
+                    <div class="pull-right" style="margin: 10px 0px 10px 0px !important;">
+                        <a id="cp4" class="btn btn-danger" data-color="rgb(255, 255, 255)" data-color-format="hex" href="#">Add Row</a>
+                    </div>
             </div>
+
+
+
+            <div class="form-group">
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <a href="<?php echo base_url() . $this->uri->segment('1') . "/" . $this->uri->segment('2') . "/list" ?>" class="btn btn-primary btn-rect pull-left" data-original-title="" title="">Back</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="<?php echo base_url() . $this->uri->segment('1') . "/" . $this->uri->segment('2') . "/list" ?>" class="btn btn-primary btn-rect pull-right" data-original-title="" title="">Save</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.form-group -->
+            </form>
+
         </div>
     </div>
+</div>
 </div>
 <script>
     $(function() {

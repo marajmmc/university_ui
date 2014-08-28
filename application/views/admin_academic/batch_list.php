@@ -21,40 +21,29 @@ if (!defined('BASEPATH'))
                 <table id="dataTable" class="table table-bordered table-condensed table-hover table-striped dataTable">
                     <thead>
                         <tr role="row">
-                            <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 80px;">ID</th>
-                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 301px;">Subject Name</th>
-                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 181px;">Subject Code</th>
-                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 347px;">Department</th>
+                            <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 180px;">Batch Code</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 341px;">Department</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 241px;">Year</th>
                             <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 204px;">Status</th>
                         </tr>
                     </thead>
                     <tbody role="alert" aria-live="polite" aria-relevant="all">
                         <tr class="odd">
-                            <td class=" sorting_1">01</td>
-                            <td class=" ">Database Design & Developments</td>
-                            <td class=" ">CSE-107</td>
+                            <td class=" sorting_1">CSE-2014-001</td>
                             <td class=" ">Computer Science & Engineering</td>
+                            <td class=" ">2014</td>
                             <td class=" ">Active</td>
                         </tr>
                         <tr class="odd">
-                            <td class=" sorting_1">02</td>
-                            <td class=" ">Managing Business Projects</td>
-                            <td class=" ">CSE-109</td>
-                            <td class=" ">Computer Science & Engineering</td>
+                            <td class=" sorting_1">EEE-2014-001</td>
+                            <td class=" ">Electrical & Electronics Engineering</td>
+                            <td class=" ">2014</td>
                             <td class=" ">Active</td>
                         </tr>
                         <tr class="odd">
-                            <td class=" sorting_1">03</td>
-                            <td class=" ">System Analysis & Design</td>
-                            <td class=" ">CSE-112</td>
-                            <td class=" ">Computer Science & Engineering</td>
-                            <td class=" ">Active</td>
-                        </tr>
-                        <tr class="odd">
-                            <td class=" sorting_1">04</td>
-                            <td class=" ">Algorithm & Data Structures</td>
-                            <td class=" ">CSE-110</td>
-                            <td class=" ">Computer Science & Engineering</td>
+                            <td class=" sorting_1">CE-2014-001</td>
+                            <td class=" ">Civil Engineering</td>
+                            <td class=" ">2014</td>
                             <td class=" ">Active</td>
                         </tr>
                     </tbody>
@@ -70,7 +59,7 @@ if (!defined('BASEPATH'))
 <script src="<?php echo base_url() ?>assets/lib/touch-punch/jquery.ui.touch-punch.min.js"></script>
 <script>
     $(function() {
-        metisTable();
+                metisTable();
         metisSortable();
     });
 </script>

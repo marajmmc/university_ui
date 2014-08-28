@@ -24,30 +24,41 @@ if (!defined('BASEPATH'))
                             <i class="fa fa-times"></i>
                         </a> 
                     </nav>
-                </div><!-- /.toolbar -->
+                </div>
             </header>
             <div id="div-1" class="body">
                 <form class="form-horizontal" method="post" action="#">
                     <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Department Name</label>
                         <div class="col-lg-8">
-                            <input type="text" id="department_name" name="department_name" placeholder="Department Name" class="form-control">
+                            <select class="form-control" id="status" name="status" data-original-title="Status" data-placement="top">
+                                <option>--Select--</option>
+                                <option value="Active" selected="">CSE</option>
+                                <option value="In-Active">EEE</option>
+                                <option value="In-Active">CE</option>
+                                <option value="In-Active">PHRM</option>
+                                <option value="In-Active">BBA</option>
+                            </select>
                         </div>
                     </div><!-- /.form-group -->
                     <div class="form-group">
-                        <label for="text1" class="control-label col-lg-4">Department Code</label>
+                        <label for="text1" class="control-label col-lg-4">Batch Number</label>
                         <div class="col-lg-8">
-                            <input type="text" id="department_code" name="department_code" placeholder="Department Code" class="form-control">
+                            <input type="text" id="department_code" name="department_code" placeholder="Batch Code" class="form-control">
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="pass1" class="control-label col-lg-4">Status</label>
+                        <label for="pass1" class="control-label col-lg-4">Year</label>
                         <div class="col-lg-8">
                             <select class="form-control" id="status" name="status" data-original-title="Status" data-placement="top">
                                 <option>--Select--</option>
-                                <option value="Active" selected="">Active</option>
-                                <option value="In-Active">Inactive</option>
+                                <option value="Active" selected="">2010</option>
+                                <option value="In-Active">2011</option>
+                                <option value="In-Active">2012</option>
+                                <option value="In-Active">2013</option>
+                                <option value="In-Active">2014</option>
+                                <option value="In-Active">2015</option>
                             </select>
                         </div>
                     </div>
