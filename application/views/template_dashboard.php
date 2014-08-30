@@ -111,7 +111,7 @@ if (!defined('BASEPATH'))
             <!-- end #content -->
         </div><!-- /#wrap -->
         <div id="footer">
-            <p>2013 &copy; Metis Admin</p>
+            <p>2014 &copy; SOFTBD Ltd.</p>
         </div>
 
         <!-- #helpModal -->

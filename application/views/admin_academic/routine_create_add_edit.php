@@ -68,8 +68,6 @@ if (!defined('BASEPATH'))
                             </select>
                         </div>
 
-
-
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
@@ -94,11 +92,60 @@ if (!defined('BASEPATH'))
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-12 pull-right">&nbsp;</div>
+
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Teacher</label></div>
+                        <div class="col-lg-3"><label for="pass1" class="control-label col-lg-12">Subject</label> </div>
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Period</label></div>
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Room</label></div>
+
+
                     </div>
-                    
+
                     <div class="row">
-                        <div class="col-lg-4 pull-left"><label for="text1" class="control-label col-lg-6"><a href="#">Add More</a></label></div>
+
+                        <div class="col-lg-3">
+                            <select class="form-control" id="department_name" name="department_name" data-original-title="Faculty Name" data-placement="top">
+                                <option>--Select--</option>
+                                <option name="cse" value="cse">Imran Mahmud</option>
+                                <option name="eee" value="eee">Iftekharul Islam</option>
+                                <option name="ce" value="ce">Shawon Chowdhury</option>
+                                <option name="ce" value="ce">Mofizul Islam</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control" id="semester_name" name="semester_name" data-original-title="Faculty Name" data-placement="top">
+                                <option>--Select--</option>
+                                <option name="cse" value="cse">CSE-101</option>
+                                <option name="eee" value="eee">CE-109</option>
+                                <option name="ce" value="ce">EEE-105</option>
+                                <option name="ce" value="ce">PHRM-112</option>
+                                <option name="ce" value="ce">CE-110</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <select class="form-control" id="batch_name" name="batch_name" data-original-title="Faculty Name" data-placement="top">
+                                <option>--Select--</option>
+                                <option name="cse" value="cse">8:30 AM ~ 9:50 AM</option>
+                                <option name="eee" value="eee">10:00 AM ~ 11:20 AM</option>
+                                <option name="ce" value="ce">11:30 AM ~ 12:50 PM</option>
+                                <option name="ce" value="ce">2:00 PM ~ 3:20 PM</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control" id="batch_name" name="batch_name" data-original-title="Faculty Name" data-placement="top">
+                                <option>--Select--</option>
+                                <option name="cse" value="cse">EXT-101</option>
+                                <option name="eee" value="eee">EXT-103</option>
+                                <option name="ce" value="ce">AD-203</option>
+                                <option name="ce" value="ce">AD-303</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 pull-right"><label for="text1" class="control-label col-lg-6"><a href="#">Add More</a></label></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 pull-right">&nbsp;</div>

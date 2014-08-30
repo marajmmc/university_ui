@@ -30,9 +30,10 @@ if (!defined('BASEPATH'))
                 <form class="form-horizontal" method="post" action="#">
                     <div class="row">
 
-                        <div class="col-lg-4"><label for="text1" class="control-label col-lg-12">Semester Name</label></div>
-                        <div class="col-lg-4"><label for="pass1" class="control-label col-lg-12">Department</label> </div>
-                        <div class="col-lg-4"><label for="text1" class="control-label col-lg-12">Subject Code</label></div>
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Semester Name</label></div>
+                        <div class="col-lg-3"><label for="pass1" class="control-label col-lg-12">Department</label> </div>
+                        <div class="col-lg-3"><label for="pass1" class="control-label col-lg-12">Batch</label> </div>
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Subject Code</label></div>
 
                     </div>
 
@@ -40,11 +41,11 @@ if (!defined('BASEPATH'))
 
 
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <input type="text" id="semester_name" name="semester_name" placeholder="Semester Name" class="form-control">
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <select class="form-control" id="department_name" name="department_name" data-original-title="Faculty Name" data-placement="top">
                                 <option>--Select--</option>
                                 <option name="cse" value="cse">Computer Science & Engineering</option>
@@ -53,14 +54,18 @@ if (!defined('BASEPATH'))
                                 <option name="ce" value="ce">Bachelor of Business Administration</option>
                             </select>
                         </div>
-
-                        <div class="col-lg-4">
-                            <select class="form-control" id="status" name="status" data-original-title="Faculty Name" data-placement="top">
+                        <div class="col-lg-3">
+                            <select class="form-control" id="department_name" name="department_name" data-original-title="Faculty Name" data-placement="top">
                                 <option>--Select--</option>
-                                <option name="active" value="1" selected="selected">Active</option>
-                                <option name="inactive" value="0">Inactive</option>
-                               
+                                <option name="cse" value="cse">CSE-23rd</option>
+                                <option name="eee" value="eee">EEE-22nd</option>
+                                <option name="ce" value="ce">CE-7th</option>
+                                <option name="ce" value="ce">BBA-20th</option>
                             </select>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <input class="form-control" type="text" name="" id=""/>
                         </div>
 
 
