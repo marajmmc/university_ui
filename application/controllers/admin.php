@@ -454,7 +454,6 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/exam_marking_criteria_list', $data);
             } elseif ($task == "add_edit") {
-                
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/exam_marking_criteria_add_edit', $data);
             }

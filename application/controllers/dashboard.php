@@ -31,9 +31,21 @@ class Dashboard extends CI_Controller {
             //go to its task
             $this->template->set_template('dashboard');
             $this->template->write('title', 'Dashboard');
-            $this->template->write_view('top_nav','dashboard/top_nav');
-            $this->template->write_view('user_info','dashboard/user_info');
-            $this->template->write_view('left_menu','dashboard/menu');
+            $this->template->write_view('top_nav', 'dashboard/top_nav');
+            $this->template->write_view('user_info', 'dashboard/user_info');
+            $this->template->write_view('left_menu', 'dashboard/menu');
+            if ($this->session->userdata("user_type") == 'Admin') {
+                $this->template->write('tasktitle', 'Admin - Dashboard');
+                $this->template->write_view('content', 'dashboard/dashboard_admin');
+            } elseif ($this->session->userdata("user_type") == 'Student') {
+                $this->template->write('tasktitle', 'Student - Dashboard');
+                $this->template->write_view('content', 'dashboard/dashboard_student');
+            } elseif ($this->session->userdata("user_type") == 'Teacher') {
+                $this->template->write('tasktitle', 'Teacher - Dashboard');
+                $this->template->write_view('content', 'dashboard/dashboard_teacher');
+            } else {
+                
+            }
             $this->template->render();
         } else {
             redirect(base_url() . 'dashboard/login');

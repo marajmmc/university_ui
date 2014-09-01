@@ -3,15 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
             <title>Adminus ? Page</title>
-           
-            <!--[if lt IE 8]><style type="text/css" media="all">@import url("css/ie.css");</style><![endif]-->
-			
-			
-			<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css" />
-			<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/login.css" />
-			<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/ie.css" />
-			<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/login-box.css" />
-			<script type="text/javascript" src="<?php echo base_url(); ?>js/menu/html5shiv.js"></script> 
+
+ <!--[if lt IE 8]><style type="text/css" media="all">@import url("css/ie.css");</style><![endif]-->
+
+
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/login.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/ie.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/login-box.css" />
+            <script type="text/javascript" src="<?php echo base_url(); ?>js/menu/html5shiv.js"></script> 
     </head>
 
     <body>
@@ -31,37 +31,32 @@
                         </ul>
                     </div>		<!-- .block_head ends -->
 
+                    <form action="<?php echo base_url(); ?>dashboard/menu/" method="post">
+                        <p>
+                            <label>Username:</label> <br>
+                                <input type="text" class="text" value="Admin" />
+                        </p>
 
+                        <p>
+                            <label>Password:</label> <br>
+                                <input type="password" class="text" value="Password" />
+                        </p>
 
+                        <p>
+                            <input type="submit" class="submit" value="Login"> &nbsp; 
+                                <input type="checkbox" class="checkbox" checked="checked" id="rememberme" /> 
+                                <label for="rememberme">Remember me</label>
+                        </p>
+                    </form>
 
-                   
+                </div>		<!-- .block_content ends -->
 
-                        <form action="<?php echo base_url(); ?>dashboard/menu/" method="post">
-                            <p>
-                                <label>Username:</label> <br>
-                                    <input type="text" class="text" value="Admin" />
-                            </p>
+                <div class="bendl"></div>
+                <div class="bendr"></div>
 
-                            <p>
-                                <label>Password:</label> <br>
-                                    <input type="password" class="text" value="Password" />
-                            </p>
+            </div>		<!-- .login ends -->
 
-                            <p>
-                                <input type="submit" class="submit" value="Login"> &nbsp; 
-                                    <input type="checkbox" class="checkbox" checked="checked" id="rememberme" /> 
-                                    <label for="rememberme">Remember me</label>
-                            </p>
-                        </form>
-
-                    </div>		<!-- .block_content ends -->
-
-                    <div class="bendl"></div>
-                    <div class="bendr"></div>
-
-                </div>		<!-- .login ends -->
-
-            </div>						<!-- wrapper ends -->
+        </div>						<!-- wrapper ends -->
 
         </div>		<!-- #hld ends -->
 
