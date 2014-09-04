@@ -1,4 +1,4 @@
-    <?php
+<?php
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -58,7 +58,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/department_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/department_add_edit', $data);
             }
@@ -68,7 +68,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_batch($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -85,7 +85,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/batch_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/batch_add_edit', $data);
             }
@@ -95,7 +95,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function routine_create($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -112,7 +112,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/routine_create_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/routine_create_add_edit', $data);
             }
@@ -122,7 +122,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_subject($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -139,7 +139,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/subject_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/subject_add_edit', $data);
             }
@@ -149,7 +149,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_semester($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -166,7 +166,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/semester_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/semester_add_edit', $data);
             }
@@ -176,7 +176,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_semester_create($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -193,7 +193,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/semester_create_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/semester_create_add_edit', $data);
             }
@@ -203,7 +203,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_teacher($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -220,7 +220,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/teacher_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/teacher_add_edit', $data);
             }
@@ -230,7 +230,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_assign_teacher($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -247,7 +247,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/assign_teacher_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/assign_teacher_add_edit', $data);
             }
@@ -257,7 +257,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function academic_assign_student($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -273,7 +273,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/assign_student_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/assign_student_add_edit', $data);
             }
@@ -283,7 +283,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function routine_period($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -299,7 +299,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/period_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/period_add_edit', $data);
             }
@@ -309,7 +309,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function routine_room($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -325,7 +325,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/room_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/room_add_edit', $data);
             }
@@ -335,7 +335,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function routine_class_routine($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -351,7 +351,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/class_routine_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/class_routine_add_edit', $data);
             }
@@ -361,7 +361,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function exam_term_setup($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -377,7 +377,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/exam_term_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/exam_term_add_edit', $data);
             }
@@ -387,7 +387,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function exam_configuration($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -403,7 +403,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/exam_config_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/exam_config_add_edit', $data);
             }
@@ -413,7 +413,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function exam_mark($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -429,7 +429,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/exam_mark_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/exam_mark_add_edit', $data);
             }
@@ -439,6 +439,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
+
     public function exam_marking_criteria($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -463,7 +464,7 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function comm_teacher_file_upload($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -487,7 +488,7 @@ class Admin extends CI_Controller {
             redirect(base_url() . 'test/logout');
         }
     }
-    
+
     public function comm_student_file_download($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -511,7 +512,7 @@ class Admin extends CI_Controller {
             redirect(base_url() . 'test/logout');
         }
     }
-    
+
     public function comm_teacher_message($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -535,7 +536,7 @@ class Admin extends CI_Controller {
             redirect(base_url() . 'test/logout');
         }
     }
-   
+
     public function comm_student_message_view($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -559,8 +560,7 @@ class Admin extends CI_Controller {
             redirect(base_url() . 'test/logout');
         }
     }
-    
-    
+
     public function student_profile_info($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -576,9 +576,13 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/student_info_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/student_info_add_edit', $data);
+            } elseif ($task == "view") {
+
+                $data['featuretitle'] = 'Record Add/Edit';
+                $this->template->write_view('content', 'admin_academic/student_info_view', $data);
             }
             $this->template->render();
         } else {
@@ -586,10 +590,10 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
+
     public function student_attendance($task = "list", $id = 0) {
         if (User_helper::is_login()) {
-            
+
             $base_url = base_url();
             $this->template->set_template('dashboard');
             $this->template->write('title', 'Attendance');
@@ -602,7 +606,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/student_attendance_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/student_attendance_add_edit', $data);
             }
@@ -611,9 +615,7 @@ class Admin extends CI_Controller {
             redirect(base_url() . 'test/logout');
         }
     }
-    
-    
-    
+
     public function student_registration($task = "list", $id = 0) {
         if (User_helper::is_login()) {
             //go to its task
@@ -629,7 +631,7 @@ class Admin extends CI_Controller {
                 $data['featuretitle'] = 'Record List';
                 $this->template->write_view('content', 'admin_academic/student_registration_list', $data);
             } elseif ($task == "add_edit") {
-                
+
                 $data['featuretitle'] = 'Record Add/Edit';
                 $this->template->write_view('content', 'admin_academic/student_registration_add_edit', $data);
             }
@@ -639,8 +641,32 @@ class Admin extends CI_Controller {
             // die();
         }
     }
-    
-    
+
+    public function notice_board($task = "list", $id = 0) {
+        if (User_helper::is_login()) {
+//go to its task
+            $base_url = base_url();
+            $this->template->set_template('dashboard');
+            $this->template->write('title', 'Academic');
+            $this->template->write('tasktitle', 'Academic - Notice Board');
+            $this->template->write_view('top_nav', 'dashboard/top_nav');
+            $this->template->write_view('user_info', 'dashboard/user_info');
+            $this->template->write_view('left_menu', 'dashboard/menu');
+            if ($task == "list") {
+                $this->template->write('css', "<link rel='stylesheet' href='$base_url" . "assets/lib/datatables/css/DT_bootstrap.css'>");
+                $data['featuretitle'] = 'Record List';
+                $this->template->write_view('content', 'admin_academic/notice_list', $data);
+            } elseif ($task == "add_edit") {
+
+                $data['featuretitle'] = 'Record Add/Edit';
+                $this->template->write_view('content', 'admin_academic/notice_add_edit', $data);
+            }
+            $this->template->render();
+        } else {
+            redirect(base_url() . 'test/logout');
+// die();
+        }
+    }
 
 }
 

@@ -28,18 +28,26 @@ if (!defined('BASEPATH'))
             <div id="div-1" class="body">
                 <form class="form-horizontal" method="post" action="#">
                     <div class="row">
-                        <div class="col-lg-4"><label for="text1" class="control-label col-lg-12">Subject</label></div>
-                        <div class="col-lg-8"><label for="pass1" class="control-label col-lg-12">Message</label> </div>
-
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Title</label></div>
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Subject</label></div>
+                        <div class="col-lg-4"><label for="pass1" class="control-label col-lg-12">Message</label> </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <input type="text" class="form-control" name="file-subject" id="file-subject"/>
                         </div>
-
-                        <div class="col-lg-8">
-                            <textarea type="textarea" name="file" id="file" cols="102"></textarea>
+                        <div class="col-lg-3">
+                            <select class="form-control" id="sub_status" name="religion" data-original-title="Status" data-placement="top">
+                                <option>--Select--</option>
+                                <option value="">Database Design & Development</option>
+                                <option value="">System Analysis & Design</option>
+                                <option value="">Algorithm & Data Structure</option>
+                                <option value="">Managing Business Projects</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <textarea type="textarea" name="file" id="file" cols="80"></textarea>
                         </div>
                     </div>
 

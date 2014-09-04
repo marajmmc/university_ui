@@ -29,8 +29,9 @@ if (!defined('BASEPATH'))
             <div id="div-1" class="body">
                 <form class="form-horizontal" method="post" action="#">
                     <div class="row">
-                        <div class="col-lg-6"><label for="text1" class="control-label col-lg-12">Subject</label></div>
-                        <div class="col-lg-6"><label for="pass1" class="control-label col-lg-12">Upload File</label> </div>
+                        <div class="col-lg-6"><label for="text1" class="control-label col-lg-12">Title</label></div>
+                        <div class="col-lg-3"><label for="text1" class="control-label col-lg-12">Subject</label></div>
+                        <div class="col-lg-1"><label for="pass1" class="control-label col-lg-12">Upload File</label> </div>
 
                     </div>
 
@@ -38,8 +39,16 @@ if (!defined('BASEPATH'))
                         <div class="col-lg-6">
                             <input type="text" class="form-control" name="file-subject" id="file-subject"/>
                         </div>
-
-                        <div class="col-lg-6">
+                        <div class="col-lg-3">
+                            <select class="form-control" id="sub_status" name="religion" data-original-title="Status" data-placement="top">
+                                <option>--Select--</option>
+                                <option value="">Database Design & Development</option>
+                                <option value="">System Analysis & Design</option>
+                                <option value="">Algorithm & Data Structure</option>
+                                <option value="">Managing Business Projects</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-1">
                             <input type="file" name="file" id="file"/>
                         </div>
                     </div>

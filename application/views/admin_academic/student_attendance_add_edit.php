@@ -33,7 +33,7 @@ if (!defined('BASEPATH'))
 
                     <div class="row">
                         <div class="col-lg-4">
-                            <select class="form-control" id="batch_name" name="batch_name" data-original-title="Faculty Name" data-placement="top">
+                            <select onchange="show_div()" class="form-control" id="batch_name" name="batch_name" data-original-title="Faculty Name" data-placement="top">
                                 <option>--Select--</option>
                                 <option name="cse" value="cse">CSE-103-21st</option>
                                 <option name="eee" value="eee">EEE-109-22nd</option>
@@ -42,81 +42,101 @@ if (!defined('BASEPATH'))
                             </select>
                         </div>
                     </div>
-
-
                     <div class="row">
                         <div class="col-lg-12 pull-right">&nbsp;</div>
                     </div>
-                    
-                    <div class="row" style="margin-left: 10px;">
-                        <table>
-                            
-                            <tr>
-                                <th>Student Name</th>
-                                <th>&nbsp;&nbsp;</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <th>&nbsp;&nbsp;</th>
-                                <th>&nbsp;&nbsp;</th>
-                                <th>&nbsp;&nbsp;</th>
-                            </tr>
-                            <tr>
-                                <td>Maraj Hossain</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Hasan</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Om Mahmud</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Bikash Dutta</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Apel Mallik</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Maraj Hossain</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Kamrul Hasan</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Om Mahmud</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Bikash Dutta</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                            <tr>
-                                <td>Apel Mallik</td>
-                                <td>&nbsp;&nbsp;</td>
-                                <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
-                            </tr>
-                        </table>
+                    <div class="row" style="margin-left: 10px; display: none" id="std_div">
+                        <div class="col-lg-12">
+                            <table>
+
+                                <tr>
+                                    <th>Status</th>
+                                    <th>&nbsp;&nbsp;</th>
+                                    <th>Student Name</th>
+                                </tr>
+                                <tr>
+                                    <th>&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;</th>
+                                    <th>&nbsp;&nbsp;</th>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student.jpg" width="5%" />
+                                        Maraj Hossain
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student1.jpg" width="5%" />
+                                        Kamrul Hasan
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student2.jpg" width="5%" />
+                                        Om Mahmud</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student3.jpg" width="5%" />
+                                        Bikash Dutta</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student4.jpg" width="5%" />
+                                        Apel Mallik</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student5.jpg" width="5%" />
+                                        Maraj Hossain</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student6.jpg" width="5%" />
+                                        Kamrul Hasan</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student7.jpg" width="5%" />
+                                        Om Mahmud</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student8.jpg" width="5%" />
+                                        Bikash Dutta</td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-control" type="checkbox" checked="checked" name="total_mark" id="total_mark" /></td>
+                                    <td>&nbsp;&nbsp;</td>
+                                    <td>
+                                        <img src="<?php echo base_url()?>/assets/img/profile_photo_student9.jpg" width="5%" />
+                                        Apel Mallik
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
 
                     <!--////////////////////// INCREMENT /////////////////////////-->
-
-
 
                     <div class="row">
                         <div class="col-lg-12 pull-right">&nbsp;</div>
@@ -142,4 +162,8 @@ if (!defined('BASEPATH'))
     $(function() {
         formGeneral();
     });
+    function show_div(){
+        $("#std_div").fadeOut();
+        $("#std_div").fadeIn();
+    }
 </script>

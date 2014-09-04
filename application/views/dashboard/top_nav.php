@@ -15,7 +15,7 @@
                 <i class="fa fa-expand"></i>
             </a> 
         </div>
-        <div class="btn-group">
+<!--        <div class="btn-group">
             <a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip" class="btn btn-default btn-sm">
                 <i class="fa fa-envelope"></i>
                 <span class="label label-warning">5</span> 
@@ -32,9 +32,9 @@
             <a data-toggle="modal" data-original-title="Help" data-placement="bottom" class="btn btn-default btn-sm" href="#helpModal">
                 <i class="fa fa-question"></i>
             </a> 
-        </div>
+        </div>-->
         <div class="btn-group">
-            <a href="login.html" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+            <a href="<?php echo base_url() ?>test/logout" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
                 <i class="fa fa-power-off"></i>
             </a> 
         </div>

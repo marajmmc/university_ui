@@ -23,29 +23,33 @@ if (!defined('BASEPATH'))
                         <tr role="row">
                             <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 120px;">ID</th>
                             <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 341px;">Subject</th>
+                            <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 341px;">Title</th>
                             <th class="sorting" role="columnheader" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 241px;">Message Date</th>
-
                         </tr>
                     </thead>
                     <tbody role="alert" aria-live="polite" aria-relevant="all">
                         <tr class="odd">
                             <td class=" sorting_1">001</td>
                             <td class=" ">Quiz Test: CSE-101</td>
+                            <td class=" ">Computer Fundamental</td>
                             <td class=" ">25-08-2014</td>
                         </tr>
                         <tr class="odd">
                             <td class=" sorting_1">002</td>
                             <td class=" ">Quiz Test: CSE-102</td>
+                             <td class=" ">Mathematics </td>
                             <td class=" ">26-08-2014</td>
                         </tr>
                         <tr class="odd">
                             <td class=" sorting_1">003</td>
                             <td class=" ">Quiz Test: EEE-101</td>
+                            <td class=" ">Telecommunication Eng.</td>
                             <td class=" ">26-08-2014</td>
                         </tr>
                         <tr class="odd">
                             <td class=" sorting_1">004</td>
                             <td class=" ">Quiz Test: CE-101</td>
+                            <td class=" ">Chart of accounting</td>
                             <td class=" ">26-08-2014</td>
                         </tr>
                

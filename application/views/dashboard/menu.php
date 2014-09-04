@@ -17,26 +17,26 @@
     <ul id="menu" class="">
         <li class="nav-header">Menu</li>
         <li class="nav-divider"></li>
-        <li class="">
-            <a href="javascript:;">
-                <i class="fa fa-dashboard"></i>
-                <span class="link-title">Control Panel</span> 
-                <span class="fa arrow"></span> 
-            </a> 
-            <ul>
-                <li class="">
-                    <a href="<?php echo base_url() . "super_admin/control_panel/module/list"; ?>">
-                        <i class="fa fa-angle-right"></i>&nbsp; Module
+        <!--        <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-dashboard"></i>
+                        <span class="link-title">Control Panel</span> 
+                        <span class="fa arrow"></span> 
                     </a> 
+                    <ul>
+                        <li class="">
+                            <a href="<?php echo base_url() . "super_admin/control_panel/module/list"; ?>">
+                                <i class="fa fa-angle-right"></i>&nbsp; Module
+                            </a> 
+                        </li>
+                        <li class="">
+                            <a href="<?php echo base_url() . "super_admin/control_panel/user_group/list"; ?>">
+                                <i class="fa fa-angle-right"></i>&nbsp;User Group
+                            </a> 
+                        </li>
+                    </ul>
                 </li>
-                <li class="">
-                    <a href="<?php echo base_url() . "super_admin/control_panel/user_group/list"; ?>">
-                        <i class="fa fa-angle-right"></i>&nbsp;User Group
-                    </a> 
-                </li>
-            </ul>
-        </li>
-        <li class="nav-divider"></li>
+                <li class="nav-divider"></li>-->
         <?php
         if ($this->session->userdata('user_type') == "Admin") {
             ?>
@@ -68,7 +68,7 @@
                         <ul>
                             <li><a href="<?php echo base_url() ?>admin/academic_semester/list">
                                     <i class="fa fa-angle-right"></i>&nbsp;Semester Info</a> </li>
-<!--                            <li><a href="<?php echo base_url() ?>admin/academic_semester_create/list">
+    <!--                            <li><a href="<?php echo base_url() ?>admin/academic_semester_create/list">
                                     <i class="fa fa-angle-right"></i>&nbsp;Create Semester</a> </li>-->
                         </ul>
                     </li>
@@ -132,49 +132,6 @@
                     </li>
                 </ul>
             </li>
-
-            <li>
-                <a href="javascript:;">
-                    <i class="fa fa-exclamation-triangle"></i>
-                    <span class="link-title">
-                        Communication
-                    </span> 
-                    <span class="fa arrow"></span> 
-                </a> 
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-angle-right"></i>&nbsp;Teacher</a> 
-                        <ul>
-                            <li>
-                                <a href="<?php echo base_url() ?>admin/comm_teacher_file_upload/list">
-                                    <i class="fa fa-angle-right"></i>&nbsp;File Upload</a> 
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url() ?>admin/comm_teacher_message/list">
-                                    <i class="fa fa-angle-right"></i>&nbsp;Message</a> 
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-angle-right"></i>&nbsp;Student</a> 
-                        <ul>
-                            <li>
-                                <a href="<?php echo base_url() ?>admin/comm_student_file_download/list">
-                                    <i class="fa fa-angle-right"></i>&nbsp;File Download</a> 
-                            </li>
-                            <li>
-                                <a href="<?php echo base_url() ?>admin/comm_student_message_view/list">
-                                    <i class="fa fa-angle-right"></i>&nbsp;Message View</a> 
-                            </li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-            </li>
             <li>
                 <a href="javascript:;">
                     <i class="fa fa-exclamation-triangle"></i>
@@ -186,25 +143,16 @@
                 <ul>
                     <li>
                         <a href="<?php echo base_url() ?>admin/student_profile_info/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Profile Info</a> 
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/student_registration/list">
                             <i class="fa fa-angle-right"></i>&nbsp;Registration</a> 
                     </li>
+                    <!--                    <li>
+                                            <a href="<?php echo base_url() ?>admin/student_registration/list">
+                                                <i class="fa fa-angle-right"></i>&nbsp;Registration</a> 
+                                        </li>-->
                 </ul>
             </li>
-             <li>
-                <a href="<?php echo base_url() ?>admin/student_attendance/list">
-                    <i class="fa fa-exclamation-triangle"></i>
-                    <span class="link-title">
-                        Attendance
-                    </span> 
-                    <span class="fa arrow"></span> 
-                </a> 
-             </li>
             <li>
-                <a href="javascript:;">
+                <a href="<?php echo base_url() ?>admin/notice_board">
                     <i class="fa fa-exclamation-triangle"></i>
                     <span class="link-title">
                         Notice Board
@@ -215,7 +163,21 @@
             <?php
         } else if ($this->session->userdata('user_type') == "Student") {
             ?>
-            
+            <li>
+                <a href="javascript:;">
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <span class="link-title">
+                        Routine
+                    </span> 
+                    <span class="fa arrow"></span> 
+                </a> 
+                <ul>
+                    <li>
+                        <a href="<?php echo base_url() ?>dashboard">
+                            <i class="fa fa-angle-right"></i>&nbsp;Routine View</a> 
+                    </li>
+                </ul>
+            </li>
             <li>
                 <a href="javascript:;">
                     <i class="fa fa-exclamation-triangle"></i>
@@ -225,7 +187,7 @@
                     <span class="fa arrow"></span> 
                 </a> 
                 <ul>
-                    
+
                     <li>
                         <a href="#">
                             <i class="fa fa-angle-right"></i>&nbsp;Student</a> 
@@ -257,24 +219,13 @@
                         <a href="<?php echo base_url() ?>admin/student_profile_info/list">
                             <i class="fa fa-angle-right"></i>&nbsp;Profile Info</a> 
                     </li>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/student_registration/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Registration</a> 
-                    </li>
+                    <!--                    <li>
+                                            <a href="<?php echo base_url() ?>admin/student_registration/list">
+                                                <i class="fa fa-angle-right"></i>&nbsp;Registration</a> 
+                                        </li>-->
                 </ul>
             </li>
-             
-            <li>
-                <a href="javascript:;">
-                    <i class="fa fa-exclamation-triangle"></i>
-                    <span class="link-title">
-                        Notice Board
-                    </span> 
-                    <span class="fa arrow"></span> 
-                </a> 
-            </li>
-            
-            
+
             <?php
         } else if ($this->session->userdata('user_type') == "Teacher") {
             ?>
@@ -290,12 +241,8 @@
                 </a> 
                 <ul>
                     <li>
-                        <a href="<?php echo base_url() ?>admin/routine_period/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Period Setup</a> 
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/routine_create/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Routine Setup</a> 
+                        <a href="<?php echo base_url() ?>dashboard">
+                            <i class="fa fa-angle-right"></i>&nbsp;Routine View</a> 
                     </li>
                 </ul>
             </li>
@@ -308,14 +255,6 @@
                     <span class="fa arrow"></span> 
                 </a> 
                 <ul>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/exam_term_setup/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Term Setup</a> 
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/exam_configuration/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Exam Configuration</a> 
-                    </li>
                     <li>
                         <a href="<?php echo base_url() ?>admin/exam_mark/list">
                             <i class="fa fa-angle-right"></i>&nbsp;Exam Mark</a> 
@@ -351,7 +290,7 @@
 
                         </ul>
                     </li>
-                    
+
 
                 </ul>
             </li>
@@ -368,26 +307,17 @@
                         <a href="<?php echo base_url() ?>admin/student_profile_info/list">
                             <i class="fa fa-angle-right"></i>&nbsp;Profile Info</a> 
                     </li>
-                    <li>
-                        <a href="<?php echo base_url() ?>admin/student_registration/list">
-                            <i class="fa fa-angle-right"></i>&nbsp;Registration</a> 
-                    </li>
+                    <!--                    <li>
+                                            <a href="<?php echo base_url() ?>admin/student_registration/list">
+                                                <i class="fa fa-angle-right"></i>&nbsp;Registration</a> 
+                                        </li>-->
                 </ul>
             </li>
-             <li>
+            <li>
                 <a href="<?php echo base_url() ?>admin/student_attendance/list">
                     <i class="fa fa-exclamation-triangle"></i>
                     <span class="link-title">
                         Attendance
-                    </span> 
-                    <span class="fa arrow"></span> 
-                </a> 
-             </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="fa fa-exclamation-triangle"></i>
-                    <span class="link-title">
-                        Notice Board
                     </span> 
                     <span class="fa arrow"></span> 
                 </a> 
@@ -410,3 +340,4 @@
     </ul>
 
 </html>
+
